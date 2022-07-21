@@ -5,7 +5,7 @@ metadata:
     app: confluent-for-kubernetes
     app.kubernetes.io/name: confluent-for-kubernetes
     app.kubernetes.io/instance: confluent-operator
-    app.kubernetes.io/component: "confluent-operator"
+    app.kubernetes.io/component: confluent-operator
   name: confluent-operator
 spec:
   ports:
@@ -14,6 +14,6 @@ spec:
       protocol: TCP
       targetPort: 7778
   selector:
-    app: "confluent-operator"
-    app.kubernetes.io/name: "confluent-operator"
+    app: confluent-operator
+    app.kubernetes.io/name: confluent-operator
   type: ClusterIP
